@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Jesteśmy firmą, która zajmuje się tworzeniem stron WWW od podstaw. Skutecznie napiszemy kod dla Twojej firmy."
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PawsOnCode.pl | tworzenie stron www</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="icon" href="./img/dog-paw.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="./img/dog-paw.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/7246cdce70.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body data-bs-spy="scroll" data-bs-target="#navId">
+		<nav
+			id="navId"
+			class="navbar navbar-expand-lg navbar-light position-fixed top-0 w-100"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="#"
+					><i class="fa-solid fa-paw"></i> Paws<span class="blue-text"
+						>OnCode</span
+					>.pl</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ms-auto">
+						<a class="nav-link active" href="#home">Home</a>
+						<a class="nav-link" href="#aboutus">O nas</a>
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+						<a class="nav-link" href="#prices">Ceny</a>
+						<a class="nav-link" href="#team">Zespół</a>
+						<a class="nav-link" href="#contact">Kontakt</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<header class="hero-img" id="home">
+			<div class="hero-text text-center">
+				<h1 data-aos="fade-up" data-aos-delay="200">
+					Witaj na <i class="fa-solid fa-paw"></i> Paws<span class="blue-text"
+						>OnCode</span
+					>.pl
+				</h1>
+				<p data-aos="fade-up" data-aos-delay="400" class="p-small">
+					W miejscu, gdzie wiemy co piszemy.
+				</p>
+				<a
+					data-aos="fade-up"
+					data-aos-delay="600"
+					href="#aboutus"
+					class="btn btn-outline-light mt-2 text-uppercase"
+					>poznaj nas</a
+				>
+			</div>
+			<div class="hero-shadow"></div>
+			<a href="#aboutus"><i class="fa-solid fa-chevron-down bounce-top"></i></a>
+		</header>
+
+		<main>
+			<section id="aboutus" class="aboutus bg-light py-5">
+				<div class="container">
+					<h2 class="section-title">o nas</h2>
+					<div class="underline"></div>
+
+					<div class="row">
+						<div data-aos="fade-right" class="col-sm-6 col-md-4">
+							<div class="text-center aboutus-hover">
+								<p><i class="fa-solid fa-mobile-screen-button"></i></p>
+								<p class="aboutus-card-title mb-1">mobile first</p>
+								<p class="aboutus-card-text">
+									Tworzymy strony na wszystkie urządzenia.
+								</p>
+							</div>
+						</div>
+						<div data-aos="zoom-in" class="col-sm-6 col-md-4">
+							<div class="text-center aboutus-hover">
+								<p><i class="fa-brands fa-html5"></i></p>
+								<p class="aboutus-card-title mb-1">HTML, CSS, JS</p>
+								<p class="aboutus-card-text">
+									Nasze strony są pisane od początku do końca przez Nas.
+								</p>
+							</div>
+						</div>
+						<div data-aos="fade-left" class="col-sm-6 col-md-4">
+							<div class="text-center aboutus-hover">
+								<p><i class="fa-solid fa-wand-magic-sparkles"></i></p>
+								<p class="aboutus-card-title mb-1">Animacje</p>
+								<p class="aboutus-card-text">
+									Jeśli tylko chcesz Twoja strona będzie w pełni animowana.
+								</p>
+							</div>
+						</div>
+						<div data-aos="fade-right" class="col-sm-6 col-md-4">
+							<div class="text-center aboutus-hover">
+								<p><i class="fa-solid fa-check-double"></i></p>
+								<p class="aboutus-card-title mb-1">testujemy swoje strony</p>
+								<p class="aboutus-card-text">
+									Każda strona jest testowana przed oddaniem do Klienta.
+								</p>
+							</div>
+						</div>
+						<div data-aos="zoom-in" class="col-sm-6 col-md-4">
+							<div class="text-center aboutus-hover">
+								<p><i class="fa-solid fa-server"></i></p>
+								<p class="aboutus-card-title mb-1">hosting</p>
+								<p class="aboutus-card-text">
+									Zapewniamy wsparcie w doborze hostingu.
+								</p>
+							</div>
+						</div>
+						<div data-aos="fade-left" class="col-sm-6 col-md-4">
+							<div class="text-center aboutus-hover">
+								<p><i class="fa-solid fa-lock"></i></p>
+								<p class="aboutus-card-title mb-1">bezpieczeństwo</p>
+								<p class="aboutus-card-text">
+									Na Naszych stronach umieszczamy wszelkie zabezpieczenia.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="aboutus-hero py-5">
+				<div class="aboutus-shadow"></div>
+
+				<div class="container py-5">
+					<h2 class="section-title">nasze strony działają na</h2>
+					<div class="underline"></div>
+
+					<div class="row">
+						<div
+							data-aos="zoom-in-right"
+							data-aos-delay="200"
+							class="col-lg-4 col-md-4 text-center aboutus-hero-item"
+						>
+							<p><i class="fa-solid fa-mobile-screen-button"></i></p>
+							<p class="aboutus-hero-title mb-1">Smartphone</p>
+						</div>
+						<div
+							data-aos="zoom-in-right"
+							data-aos-delay="400"
+							class="col-lg-4 col-md-4 text-center aboutus-hero-item"
+						>
+							<p><i class="fa-solid fa-tablet-screen-button"></i></p>
+							<p class="aboutus-hero-title mb-1">Tablet</p>
+						</div>
+						<div
+							data-aos="zoom-in-right"
+							data-aos-delay="600"
+							class="col-lg-4 col-md-4 text-center aboutus-hero-item"
+						>
+							<p><i class="fa-solid fa-laptop"></i></p>
+							<p class="aboutus-hero-title mb-1">Komputery PC</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="portfolio" class="portfolio bg-light py-5">
+				<h2 class="section-title">portfolio</h2>
+				<div class="underline"></div>
+
+				<div class="row"></div>
+				<div class="container">
+					<div class="card-group d-lg-none">
+						<div class="card me-3">
+							<img
+								src="./img/carousele-small.jpeg"
+								class="card-img-top"
+								alt="Screenshot ekranu z kodem HTML"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Pierwszy przykład strony</h5>
+								<p class="card-text">
+									Tutaj za jakiś czas znajdzie się Nasza pierwsza komercyjna
+									strona WWW. Pssst... Maciek to do Ciebie
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/carousel2.jpeg"
+								class="card-img-top"
+								alt="Ekran z kodem HTML oraz drugim monitorem obok"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Drugi przykład strony</h5>
+								<p class="card-text">A tutaj będzie druga komercyjna strona!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div
+						id="carouselExampleCaptions"
+						class="carousel slide d-none d-lg-block"
+						data-bs-ride="carousel"
+					>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									src="./img/carousele-small.jpeg"
+									class="d-block w-100"
+									alt="Screenshot ekranu z kodem HTML"
+								/>
+								<div class="carousel-caption d-none d-md-block">
+									<div class="carousel-item-shadow"></div>
+									<h5>Pierwszy przykład strony</h5>
+									<p>
+										Tutaj za jakiś czas znajdzie się Nasza pierwsza komercyjna
+										strona WWW. Pssst... Maciek to do Ciebie
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="./img/carousel2.jpeg"
+									class="d-block w-100"
+									alt="Ekran z kodem HTML oraz drugim monitorem obok"
+								/>
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Drugi przykład strony</h5>
+									<p>A tutaj będzie druga komercyjna strona!</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="./img/carousel3.jpeg"
+									class="d-block w-100"
+									alt="MacBook z notatnikiem po prawej stronie"
+								/>
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Trzeci przykład strony</h5>
+									<p>Nie uwierzysz, tu też niedługo będzie strona</p>
+								</div>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section id="prices" class="prices py-5 bg-light">
+				<h2 class="section-title">ceny</h2>
+				<div class="underline"></div>
+
+				<div class="container">
+					<div class="price-wrap row text-center justify-content-center">
+						<div class="col-md-6 col-xl-4">
+							<div class="price-box">
+								<p class="price-title">basic template</p>
+								<hr />
+								<p><span>Narzędzia: </span>Bootstrap, basic HTML&CSS</p>
+								<p><span>Typ strony: </span>Landing Page</p>
+								<p><span>Grafiki: </span>Brak dobierania grafik</p>
+								<p><span>Video: </span>Brak</p>
+								<p class="price-tag">1000-2000 PLN</p>
+								<button class="btn btn-secondary">zamawiam</button>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-4">
+							<div class="price-box">
+								<p class="price-title">simple web</p>
+								<hr />
+								<p><span>Narzędzia: </span> HTML, CSS, JS</p>
+								<p><span>Typ strony: </span>Wizytówka internetowa</p>
+								<p><span>Grafika: </span>Dobieranie grafiki do zlecenia</p>
+								<p><span>Video: </span>brak</p>
+								<p class="price-tag">2000-3500 PLN</p>
+								<button class="btn btn-primary">zamawiam</button>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-4">
+							<div class="price-box">
+								<p class="price-title">complex web</p>
+								<hr />
+								<p><span>Narzędzia: </span>Everything you want</p>
+								<p><span>Typ strony: </span>Strona firmowa</p>
+								<p><span>Grafika: </span>Dobieranie grafiki do zlecenia</p>
+								<p><span>Video: </span>Tak, jako tło lub na zlecenie</p>
+								<p class="price-tag">2500-5000 PLN</p>
+								<button class="btn btn-secondary">zamawiam</button>
+							</div>
+						</div>
+					</div>
+
+					<p class="price-info text-center">
+						Skorzystaj z jednego z trzech głównych pakietów lub
+						<a href="#contact">skontaktuj się</a> z nami i ustal warunki
+						indywidualne!
+					</p>
+					<p class="text-muted text-center">
+						Pakiet <strong>FULL PACK</strong> zawiera wersję gier na urządzenia
+						mobilne, PC oraz konsole.
+					</p>
+					<p class="text-muted text-center">Podane ceny są cenami NETTO.</p>
+				</div>
+			</section>
+
+			<section id="team" class="team py-5">
+				<h2 class="section-title">Zespół</h2>
+				<div class="underline"></div>
+
+				<div class="container">
+					<div class="card-group team-carousel">
+						<div class="card mx-3">
+							<img
+								src="./img/team/owner.jpeg"
+								class="card-img-top"
+								alt="Olek w Leogangu"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Olek - właściciel</h5>
+								<p class="card-text">
+									Każe na siebie mówić "Prezes" chociaż ledwo wiąże koniec z
+									końcem w tym pierdolniku. Jest o tyle spoko, że pilnuje wypłat
+									do 10-ego
+								</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-muted d-flex justify-content-around">
+									<a href="https://www.facebook.com"
+										><i class="fa-brands fa-facebook-f"></i
+									></a>
+									<a href="https://www.instagram.com"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+									<a href="https://www.linkedin.com"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</small>
+							</div>
+						</div>
+
+						<div class="card mx-3">
+							<img
+								src="./img/team/karola.jpg"
+								class="card-img-top"
+								alt="Karolina na rowerze"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Karola - Art Director</h5>
+								<p class="card-text">
+									Karola, nikt oprócz właściciela nie wie czym tak naprawdę się
+									zajmuje, ale podobno bez niej to wszystko by upadło.
+								</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-muted d-flex justify-content-around">
+									<a href="https://www.facebook.com"
+										><i class="fa-brands fa-facebook-f"></i
+									></a>
+									<a href="https://www.instagram.com"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+									<a href="https://www.linkedin.com"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</small>
+							</div>
+						</div>
+						<div class="card mx-3">
+							<img
+								src="./img/team/shira.jpeg"
+								class="card-img-top"
+								alt="Karolina na rowerze"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Shira - pies właściciela</h5>
+								<p class="card-text">
+									Pies, który wykonuje w tej firmie zawód "córka". Nigdy nie
+									pracowała nawet jednej sekundy. Dała stempel swojej łapy i ma
+									z tego profity.
+								</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-muted d-flex justify-content-around">
+									<a href="https://www.facebook.com"
+										><i class="fa-brands fa-facebook-f"></i
+									></a>
+									<a href="https://www.instagram.com"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+									<a href="https://www.linkedin.com"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</small>
+							</div>
+						</div>
+						<div class="card mx-3">
+							<img
+								src="./img/team/mario.jpg"
+								class="card-img-top"
+								alt="Mario na budowie"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Mario - HR</h5>
+								<p class="card-text">
+									Poszukuje młodych i zdolnych talentów. Jeśli ktoś do Ciebie
+									będzie pisał na LinkedIn to pamiętaj, że może być to właśnie
+									Nasz Mario
+								</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-muted d-flex justify-content-around">
+									<a href="https://www.facebook.com"
+										><i class="fa-brands fa-facebook-f"></i
+									></a>
+									<a href="https://www.instagram.com"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+									<a href="https://www.linkedin.com"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</small>
+							</div>
+						</div>
+						<div class="card mx-3">
+							<img
+								src="./img/team/adult-2449725_1920.jpg"
+								class="card-img-top"
+								alt="Tomek główny księgowy"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Tomek - main accountant</h5>
+								<p class="card-text">
+									Tomek, Nasz główny księgowy. Ma w sobie o wiele więcej
+									kreatywności niż Nasza Art Director. Tylko dzięki Niemu
+									jeszcze nie popłynęliśmy
+								</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-muted d-flex justify-content-around">
+									<a href="https://www.facebook.com"
+										><i class="fa-brands fa-facebook-f"></i
+									></a>
+									<a href="https://www.instagram.com"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+									<a href="https://www.linkedin.com"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="team-shadow"></div>
+			</section>
+			<section id="contact" class="contact contact-box py-5 bg-light">
+				<h2 class="section-title">Kontakt</h2>
+				<div class="underline"></div>
+				<div class="container">
+					<div class="row text-center contact-us">
+						<div
+							data-aos="zoom-in-right"
+							class="col-sm-6 col-lg-4 contact-item order-1"
+						>
+							<h3>główna siedziba</h3>
+							<p>ul. Magellana 3</p>
+							<p>51-505 Wrocław</p>
+							<p>+48 515 829 720</p>
+							<p><a href="mailto:info@pawsoncode.pl">info@pawsoncode.pl</a></p>
+						</div>
+						<div
+							data-aos="zoom-in"
+							class="col-lg-4 contact-item order-0 order-lg-1"
+						>
+							<h3>social media</h3>
+							<div class="social-media">
+								<a href="https://www.facebook.com"
+									><i class="fa-brands fa-facebook-f"></i
+								></a>
+								<a href="https://www.instagram.com"
+									><i class="fa-brands fa-instagram"></i
+								></a>
+								<a href="https://www.linkedin.com"
+									><i class="fa-brands fa-linkedin-in"></i
+								></a>
+							</div>
+						</div>
+						<div
+							data-aos="zoom-in-left"
+							class="col-sm-6 col-lg-4 contact-item order-1"
+						>
+							<h3>siedziba #2</h3>
+							<p>ul. Nieznana</p>
+							<p>00-000 Nieznane</p>
+							<p>+48 000 000 000</p>
+							<p><a href="mailto:info@pawsoncode.pl">info@pawsoncode.pl</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="contact-shadow"></div>
+			</section>
+		</main>
+
+		<footer class="bg-dark text-light py-4 text-center">
+			<p class="mb-0">&copy; 2024 | PawsOnCode.pl - tworzenie stron WWW</p>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+		></script>
+
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="./js/aos.js"></script>
+		<script src="./js/slick.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
