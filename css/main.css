@@ -270,27 +270,82 @@ header.hero-img .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -5;
 }
+.team .cards {
+  display: flex;
+  justify-content: center;
+}
 .team .card {
-  transition: scale 0.2s;
-}
-.team .card img {
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.team .card i {
-  padding: 10px;
-}
-.team .card .card-body {
-  height: 180px;
-}
-.team .card:hover {
-  scale: 0.98;
-}
-.team .card-title {
-  margin-bottom: 20px;
+  position: relative;
+  margin: 10px;
+  height: 520px;
+  width: 50%;
   text-align: center;
-  font-weight: 600;
+  background-position: center;
+  background-size: center;
+  border-radius: 15px;
+  border: 0px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+.team .one {
+  background-position: 70% 30%;
+  background-image: url(../img/team/owner.jpeg);
+}
+.team .two {
+  background-image: url(../img/team/karola.jpg);
+}
+.team .three {
+  background-image: url(../img/team/shira.jpeg);
+}
+.team button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+  z-index: 10;
+  animation: 1s infinite blink;
+}
+@keyframes blink {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+.team button:hover ~ .text {
+  -webkit-clip-path: circle(100% at 50% 90%);
+          clip-path: circle(100% at 50% 90%);
+}
+.team .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  -webkit-clip-path: circle(0 at 50% 90%);
+          clip-path: circle(0 at 50% 90%);
+  transition: 0.8s;
+}
+.team h1 {
+  color: #039dff;
+}
+.team h2 {
+  margin-bottom: 30px;
 }
 
 .contact {

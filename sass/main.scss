@@ -257,29 +257,95 @@ header.hero-img {
 		z-index: -5;
 	}
 
+.cards{
+	display: flex;
+	justify-content: center;
+}
+
 	.card {
-		transition: scale 0.2s;
-		img {
-			height: 300px;
-			object-fit: cover;
-		}
-
-		i {
-			padding: 10px;
-		}
-		.card-body {
-			height: 180px;
-		}
-	}
-
-	.card:hover {
-		scale: 0.98;
-	}
-
-	.card-title {
-		margin-bottom: 20px;
+		position: relative;
+		margin: 10px;
+		height: 520px;
+		width: 50%;
 		text-align: center;
-		font-weight: 600;
+		background-position: center;
+		background-size: center;
+		border-radius: 15px;
+		border: 0px;
+		box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.7);
+		overflow: hidden;
+	}
+
+	.one {
+		background-position: 70% 30%;
+		background-image: url(../img/team/owner.jpeg);
+	}
+
+	.two {
+		background-image: url(../img/team/karola.jpg);
+	}
+
+	.three {
+		background-image: url(../img/team/shira.jpeg);
+	}
+
+	button {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 10px;
+		background: none;
+		border: none;
+		color: #fff;
+		font-size: 36px;
+		text-shadow: 3px 3px 5px rgb(0, 0, 0);
+		z-index: 10;
+		animation: 1s infinite blink;
+	}
+
+	@keyframes blink {
+		0%{
+			transform: scale(0.8);
+		}
+
+		50%{
+			transform: scale(1.2);
+		}
+
+		100%{
+			transform: scale(0.8);
+		}
+		
+	}
+
+	button:hover~.text{
+		clip-path: circle(100% at 50% 90%);
+	}
+
+	
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 80px 30px;
+		background-color: rgb(0, 0, 0, .9);
+		color: colors.$white;
+		clip-path: circle(0 at 50% 90%);
+		transition: .8s;
+	}
+
+	h1{
+		color: colors.$main-color;
+	}
+
+	h2{
+		margin-bottom: 30px;
 	}
 }
 
@@ -290,11 +356,11 @@ header.hero-img {
 	background-position: center;
 	z-index: 0;
 
-	.section-title{
+	.section-title {
 		color: colors.$light-gray;
 	}
 
-	.underline{
+	.underline {
 		background-color: colors.$light-gray;
 	}
 	.contact-us {
@@ -314,34 +380,32 @@ header.hero-img {
 		z-index: -5;
 	}
 
-	.contact-item{
+	.contact-item {
 		margin: 30px 0;
 
-		a{
+		a {
 			color: colors.$light-gray;
 			text-decoration: none;
 		}
 
-		h3{
+		h3 {
 			margin-bottom: 35px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 		}
 
-	.social-media{
-		font-size: 30px;
-		a{
-			padding: 10px;
-			transition: color .2s;
-		}
+		.social-media {
+			font-size: 30px;
+			a {
+				padding: 10px;
+				transition: color 0.2s;
+			}
 
-		a:hover{
-			color: colors.$main-color;
+			a:hover {
+				color: colors.$main-color;
+			}
 		}
-	}	
 	}
-
-
 }
 
 @media (min-width: 768px) {
